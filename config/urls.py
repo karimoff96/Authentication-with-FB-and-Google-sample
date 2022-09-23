@@ -31,5 +31,5 @@ urlpatterns = [
     #     template_name='registration/login.html'), name='login'),
     # path('logout/', auth_views.LogoutView.as_view(
     #     next_page='home'), name='logout'),
-    # path('oauth/', include('social_django.urls', namespace='social name')),
+    # path('oauth/', include('social_django.urls', namespace='social')),
 ]
