@@ -135,7 +135,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR/'static'
+STATIC_ROOT = BASE_DIR / 'static'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
@@ -153,3 +153,4 @@ SOCIAL_AUTH_FACEBOOK_SECRET = '598060ab803f4328df6fd701a4becc3d'  # App Secret
 SOCIAL_AUTH_URL_NAMESPACE = 'social'
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '93131549483-da73l3o099t71p187vjn1uoqpi6pitpu.apps.googleusercontent.com'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
+SOCIAL_AUTH_RAISE_EXCEPTIONS = False
