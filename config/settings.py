@@ -56,13 +56,11 @@ SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.social_auth.auth_allowed',
     'social_core.pipeline.social_auth.social_user',
     'social_core.pipeline.user.get_username',
-    'social_core.pipeline.social_auth.associate_by_email',  # <--- enable this one
     'social_core.pipeline.user.create_user',
     'social_core.pipeline.social_auth.associate_user',
     'social_core.pipeline.social_auth.load_extra_data',
     'social_core.pipeline.user.user_details',
 )
-
 ROOT_URLCONF = 'config.urls'
 AUTHENTICATION_BACKENDS = (
     'social_core.backends.facebook.FacebookOAuth2',
@@ -147,11 +145,11 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = 'home'
 
-SOCIAL_AUTH_FACEBOOK_KEY = '810952967024331'  # App ID
-SOCIAL_AUTH_FACEBOOK_SECRET = '598060ab803f4328df6fd701a4becc3d'  # App Secret
+SOCIAL_AUTH_FACEBOOK_KEY = '792022868508484'  # App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = '284548e851f8cbb27a607dab1633f04c'  # App Secret
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
-  'fields': 'name, email, age_range'
+  'fields': 'id,name,email',
 }
 # SOCIALACCOUNT_AUTO_SIGNUP = True
 # ACCOUNT_CONFIRM_EMAIL_ON_GET = True
