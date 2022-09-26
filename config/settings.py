@@ -82,8 +82,8 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
 
-                'social_django.context_processors.backends',  # <-- Here
-                'social_django.context_processors.login_redirect',  # <-- Here
+                'social_django.context_processors.backends', 
+                'social_django.context_processors.login_redirect', 
             ],
         },
     },
@@ -145,8 +145,8 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = 'home'
 
-SOCIAL_AUTH_FACEBOOK_KEY = '792022868508484'  # App ID
-SOCIAL_AUTH_FACEBOOK_SECRET = '284548e851f8cbb27a607dab1633f04c'  # App Secret
+SOCIAL_AUTH_FACEBOOK_KEY = 'App ID' 
+SOCIAL_AUTH_FACEBOOK_SECRET = 'App secret' 
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
   'fields': 'id,name,email',
@@ -154,6 +154,6 @@ SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
 # SOCIALACCOUNT_AUTO_SIGNUP = True
 # ACCOUNT_CONFIRM_EMAIL_ON_GET = True
 SOCIAL_AUTH_URL_NAMESPACE = 'social'
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '93131549483-da73l3o099t71p187vjn1uoqpi6pitpu.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = 'App key'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'App secret'
 SOCIAL_AUTH_RAISE_EXCEPTIONS = False
